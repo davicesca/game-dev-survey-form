@@ -108,6 +108,13 @@ textarea {
     color: #FFF;
     text-transform: uppercase;
     border: 1px solid #FFF;
+    transition: 0.5s all ease;
+}
+
+.btn:hover {
+    background-color: #FFF;
+    color: #000;
+    border-color: #000;
 }
 
 .main-footer {
