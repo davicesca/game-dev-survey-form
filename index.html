@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Dev Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1 id="title">game development survey form</h1>
+            <p id="description">This form was made for game development professionals/students.</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-field">
+                <label class="label" id="name-label" for="name">Name</label>
+                <input class="input block-input" id="name" name="name" type="text" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form-field">
+                <label class="label" id="email-label" for="email">Email</label>
+                <input class="input block-input" id="email" name="email" type="email" placeholder="Enter your Email" required />
+            </div>
+            
+            <div class="form-field">
+                <label class="label" id="number-label" for="number">Age</label>
+                <input class="input block-input" id="number" name="age" type="number" min="13" max="120" placeholder="Enter your age" required />
+            </div>
+
+            <div class="form-field">
+                <label class="label" for="role">
+                    Which option describes your role in a game dev team?
+                </label>
+                <select class="input block-input" id="dropdown role" name="role" required="true">
+                    <option selected disabled>Select a role</option>
+                    <option>Game Programming</option>
+                    <option>Game Design</option>
+                    <option>Game Art</option>
+                    <option>Audio Design</option>
+                    <option>Marketing</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label class="label" for="dev-time">
+                    how long do you make games?
+                </label>
+                <select class="input block-input" id="dev-time" name="devTime" required>
+                    <option selected disabled>Select a time range</option>
+                    <option>Less than 1 year</option>
+                    <option>Between 1-2 years</option>
+                    <option>Between 3-5 years</option>
+                    <option>More than 5 years</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label class="label">
+                    Select which game engine you or your team use.
+                </label>
+
+                <div class="check-field">
+                    <input id="unity" name="engine" value="unity" class="input inline-input" type="radio" checked />
+                    <label class="check-label" for="unity">Unity Game Engine</label>
+                </div>
+
+                <div class="check-field">
+                    <input id="unreal" name="engine" value="unreal" class="input inline-input" type="radio" />
+                    <label class="check-label" for="unreal">Unreal Game Engine</label>
+                </div>
+
+                <div class="check-field">
+                    <input id="gamemaker" name="engine" value="gamemaker" class="input inline-input" type="radio" />
+                    <label class="check-label" for="gamemaker">GameMaker Studio</label>
+                </div>
+
+                <div class="check-field">
+                    <input id="godot" name="engine" value="godot" class="input inline-input" type="radio" />
+                    <label class="check-label" for="godot">Godot Game Engine</label>
+                </div>
+
+                <div class="check-field">
+                    <input id="other" name="engine" value="other" class="input inline-input" type="radio" />
+                    <label class="check-label" for="other">Other</label>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label class="label" for="about">
+                    Write something about your game dev journey.
+                </label>  
+                <textarea class="input block-input" id="about" name="about" rows="4" placeholder="Write about your journey here..." minlength="40" required ></textarea>
+            </div>
+
+            <div class="form-field">
+                <div class="check-field">
+                    <input id="send-info" name="sendInfo" value="true" class="input inline-input" type="checkbox" required />
+                    <label class="check-label" for="send-info">I agree to send all information for research purposes.</label>
+                </div>
+                <div class="check-field">
+                    <input id="receive-email" name="receiveEmail" value="true" class="input inline-input" type="checkbox" />
+                    <label class="check-label" for="receive-email">I agree to receive emails about the research result</label>
+                </div>
+            </div>
+            <input id="submit" class="btn" type="submit" value="click to submit your info." />
+        </form>
+        <footer class="main-footer">
+            <p class="copyright">Copyright © 2022 by Davi Fagundes Cesca. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
